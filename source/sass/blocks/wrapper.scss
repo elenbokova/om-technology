@@ -1,0 +1,7 @@
+.wrapper {
+  position: relative;
+  min-height: calc(100*var(--vh, 1vh));
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}

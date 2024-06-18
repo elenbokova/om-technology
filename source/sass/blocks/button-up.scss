@@ -1,0 +1,69 @@
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.button-up {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  width: 54px;
+  height: 55px;
+  background-color: transparentize($color: $color-accent, $amount: 0.4);
+  border: none;
+  opacity: 1;
+  transition: background-color $trans-600;
+  z-index: 1000;
+  cursor: pointer;
+
+  animation: fadeInFromNone 0.5s ease-in-out;
+
+  @include vp-767 {
+    width: 44px;
+    height: 46px;
+    right: 15px;
+    bottom: 30px;
+  }
+
+  & svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -59%);
+    color: $color-basic-white;
+
+    @include vp-767 {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &:focus {
+    background-color: $color-logo-accent;
+  }
+
+  &:hover {
+    background-color: transparentize($color-accent, 0.5);
+  }
+
+  &:active {
+    background-color: $color-logo-accent;
+  }
+}
+
+.button-up.is-hidden {
+  display: none;
+  opacity: 0;
+}

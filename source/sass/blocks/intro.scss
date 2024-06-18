@@ -1,0 +1,77 @@
+.intro {
+  margin-top: 5vh;
+  min-height: calc(100vh - 30px);
+  position: relative;
+  background-color: $color-basic-gray;
+
+  &__image-wrapper {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      min-height: 100vh;
+      object-fit: cover;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    bottom: 14vh;
+    width: 645px;
+    z-index: 2;
+
+    @include vp-1439 {
+      width: 45%;
+    }
+
+    @include vp-1023 {
+      bottom: 13vh;
+    }
+
+    @include vp-767 {
+      width: 70%;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 316px;
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    background-image: $black-to-right;
+    z-index: 1;
+
+    @include vp-1439 {
+      height: 22vw;
+    }
+
+    @include vp-767 {
+      height: 40vw;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45vw;
+    height: 120vh; /* Adjust the height as needed */
+    background: linear-gradient(to bottom, rgba(255, 208, 1, 0.308) 45%, rgba(175, 142, 7, 0.829) 100%);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    z-index: 1;
+  }
+
+}
