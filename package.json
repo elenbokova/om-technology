@@ -17,7 +17,7 @@
     "dev": "set NODE_ENV=production&& set NODE_OPTIONS=--openssl-legacy-provider&& gulp dev",
     "webp": "gulp webp",
     "imagemin": "gulp imagemin",
-    "deploy": "gulp build && gh-pages -d build"
+    "deploy": "set NODE_OPTIONS=--openssl-legacy-provider&& gulp build && gh-pages -d build"
   },
   "editorconfig-cli": [
     "*.json",
