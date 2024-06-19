@@ -2,8 +2,6 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Burger} from './modules/burger';
 import {StickyHeader} from './modules/sticky-header';
 import {NavigationChanger} from './utils/navigation-changer';
-import {initSingleSlider} from './modules/single-slider';
-import {initPhoneCheck} from './utils/phone-check';
 import {initUpButton} from './modules/scroll-to-top';
 
 
@@ -32,8 +30,6 @@ window.addEventListener('DOMContentLoaded', () => {
     navigationChanger.init();
 
     initUpButton();
-    initSingleSlider();
-    initPhoneCheck();
   });
 });
 

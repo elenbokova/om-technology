@@ -1,10 +1,42 @@
 .catalog {
   padding: 100px 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: $accent-to-bottom;
+    clip-path: polygon(100% 100%, 53% 100%, 100% 91%);
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: $color-transparent-dark;
+    clip-path: polygon(100% 100%, 95% 100%, 100% 45%);
+    z-index: 1;
+
+    @include vp-767 {
+      clip-path: polygon(100% 100%,80% 100%,100% 45%);
+    }
+
+    @include vp-374 {
+      display: none;
+    }
+  }
 
   @include vp-767 {
     padding: 10vw 0;
   }
-
 }
 
 .catalog__title {

@@ -1346,32 +1346,8 @@ button.swiper-pagination-bullet {
 @font-face {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/poppins-light.woff2") format("woff2"), url("../fonts/poppins-light.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
   font-weight: 400;
   src: url("../fonts/poppins-regular.woff2") format("woff2"), url("../fonts/poppins-regular.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/poppins-semi-bold.woff2") format("woff2"), url("../fonts/poppins-semi-bold.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/poppins-bold.woff2") format("woff2"), url("../fonts/poppins-bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -2177,7 +2153,6 @@ button {
   right: 0;
   width: 45vw;
   height: 120vh;
-  /* Adjust the height as needed */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, rgba(255, 208, 1, 0.308)), to(rgba(175, 142, 7, 0.829)));
   background: linear-gradient(to bottom, rgba(255, 208, 1, 0.308) 45%, rgba(175, 142, 7, 0.829) 100%);
   clip-path: polygon(100% 0, 0 0, 100% 100%);
@@ -2241,7 +2216,8 @@ button {
 }
 
 .services {
-  padding: 8vh 0;
+  padding: 0;
+  padding-top: 8vh;
   min-height: 100vh;
 }
 
@@ -2363,6 +2339,18 @@ button {
 
 .ecb {
   padding: 100px 0 80px;
+  position: relative;
+}
+
+.ecb::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(172, 138, 0, 0.2);
+  clip-path: polygon(0 100%, 0 45%, 92% 100%);
 }
 
 .ecb .container {
@@ -2413,6 +2401,32 @@ button {
 
 .catalog {
   padding: 100px 0;
+  position: relative;
+}
+
+.catalog::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, rgba(236, 200, 52, 0.527)), to(rgba(172, 138, 0, 0.7)));
+  background: linear-gradient(to bottom, rgba(236, 200, 52, 0.527) 85%, rgba(172, 138, 0, 0.7) 100%);
+  clip-path: polygon(100% 100%, 53% 100%, 100% 91%);
+  z-index: 1;
+}
+
+.catalog::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  clip-path: polygon(100% 100%, 95% 100%, 100% 45%);
+  z-index: 1;
 }
 
 .catalog__title {
@@ -2730,216 +2744,6 @@ button {
   opacity: 0;
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.7);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  pointer-events: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.modal::-webkit-scrollbar {
-  display: none;
-}
-
-.modal__wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 60px 40px;
-}
-
-.modal__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.modal__content {
-  position: relative;
-  width: 600px;
-  padding: 40px;
-  background-color: #b49d46;
-}
-
-.modal__close-button {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background: rgba(2, 1, 1, 0);
-  border: none;
-  cursor: pointer;
-}
-
-.modal--responsive .modal__content {
-  width: 100%;
-}
-
-.modal--fit-content .modal__content {
-  width: auto;
-}
-
-.modal--no-scale {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-}
-
-.modal--preload {
-  -webkit-transition: none;
-  transition: none;
-}
-
-.modal.is-active {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal__title {
-  margin: 0;
-  margin-bottom: 2vh;
-  font-family: "Poppins", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  color: #575756;
-  line-height: 1em;
-}
-
-.modal__description {
-  font-size: 20px;
-  color: #575756;
-}
-
-.modal__form {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  row-gap: 20px;
-}
-
-.modal__input {
-  width: 100%;
-  padding: 15px;
-  border: none;
-  color: #575756;
-}
-
-.modal__input::-webkit-input-placeholder {
-  color: #575756;
-}
-
-.modal__input::-moz-placeholder {
-  color: #575756;
-}
-
-.modal__input:-ms-input-placeholder {
-  color: #575756;
-}
-
-.modal__input::-ms-input-placeholder {
-  color: #575756;
-}
-
-.modal__input::placeholder {
-  color: #575756;
-}
-
-.modal__checkbox-label {
-  position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-left: 35px;
-  cursor: pointer;
-}
-
-.modal__checkbox-label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 45%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
-}
-
-.modal__checkbox-input {
-  bottom: 20%;
-}
-
-.modal__checkbox-input.focus-visible:focus + .modal__checkbox-label {
-  outline: 2px solid color-accent;
-  outline-offset: 2px;
-}
-
-.modal__checkbox-input[type=checkbox]:checked + .modal__checkbox-label::after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 3px);
-  left: 3px;
-  -webkit-transform: translateY(-50%) rotate(-50deg);
-  -ms-transform: translateY(-50%) rotate(-50deg);
-  transform: translateY(-50%) rotate(-50deg);
-  width: 15px;
-  height: 9px;
-  border-bottom: 2px solid #575756;
-  border-left: 2px solid #575756;
-}
-
-.modal__button {
-  border-radius: 3px;
-}
-
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -3162,14 +2966,6 @@ button {
 
   .contacts .contacts__phone {
     margin-right: -10px;
-  }
-
-  .modal__title {
-    font-size: 4.5vw;
-  }
-
-  .modal__description {
-    font-size: 1.6vw;
   }
 }
 
@@ -3412,10 +3208,6 @@ button {
     line-height: 1.2;
   }
 
-  .services {
-    padding-bottom: 0;
-  }
-
   .services__title {
     font-size: 6vw;
   }
@@ -3478,6 +3270,10 @@ button {
 
   .ecb__images {
     width: 100%;
+  }
+
+  .catalog::after {
+    clip-path: polygon(100% 100%, 80% 100%, 100% 45%);
   }
 
   .catalog {
@@ -3659,27 +3455,6 @@ button {
     width: 24px;
     height: 24px;
   }
-
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
-
-  .modal__content {
-    width: 92%;
-    padding: 40px 20px;
-  }
-
-  .modal--fit-content .modal__content {
-    width: 100%;
-  }
-
-  .modal__title {
-    font-size: 5.5vw;
-  }
-
-  .modal__description {
-    font-size: 3vw;
-  }
 }
 
 @media (max-width: 767px) and (hover: hover) {
@@ -3704,8 +3479,11 @@ button {
   }
 
   .services__item p {
-    min-height: 40vh;
     font-size: 4vw;
+  }
+
+  .services__item {
+    min-height: 40vh;
   }
 
   .services__item:nth-child(1) {
@@ -3782,6 +3560,10 @@ button {
     font-size: 18px;
   }
 
+  .catalog::after {
+    display: none;
+  }
+
   .catalog__title {
     font-size: 20px;
   }
@@ -3796,14 +3578,6 @@ button {
 
   .advantages__title {
     font-size: 24px;
-  }
-
-  .modal__title {
-    font-size: 24px;
-  }
-
-  .modal__description {
-    font-size: 14px;
   }
 }
 

@@ -24,9 +24,7 @@
 
   <link rel="preload" href="fonts/inter-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/inter-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/poppins-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/poppins-semi-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/poppins-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -35,7 +33,7 @@
       <div class="container">
         <div class="header__container header__container--nojs">
           <a class="header__logo" href="#">
-            <img class="header__logo-image" src="img/logo-full.png" alt="Логотип компании «ОМ-Технология».">
+            <img class="header__logo-image" src="img/logo-full.png" alt="Логотип компании «ОМ-Технология»." width="180" height="61">
           </a>
           <nav class="header__nav">
             <ul class="header__nav-list list-reset">
@@ -75,14 +73,16 @@
           <section class="intro" id="intro" data-id="intro">
             <div class="intro__image-wrapper">
               <picture>
-                <source srcset="img/intro.webp 1x, img/intro@2x.webp 2x" type="image/webp">
-                <img src="img/intro.jpg" srcset="img/intro@2x.jpg 2x" alt="Футуристичные схемы">
+                <source media="(min-width: 768px)" srcset="img/intro.webp 1x, img/intro@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/intro.jpg 1x, img/intro@2x.jpg 2x">
+                <source srcset="img/intro-mobile.webp 1x, img/intro-mobile@2x.webp 2x" type="image/webp">
+                <img src="img/intro-mobile.jpg" srcset="img/intro-mobile@2x.jpg 2x" alt="Футуристичные схемы">
               </picture>
             </div>
 
             <div class="container">
               <h1 class="visually-hidden">Компания Ом-Технология</h1>
-              <img class="intro__logo" src="./img/logo-full.png" alt="Logo">
+              <img class="intro__logo" src="./img/logo-full.png" alt="Logo" width="645" height="220">
             </div>
           </section>
 
@@ -96,7 +96,8 @@
                   <picture>
                     <source srcset="img/about.webp 1x, img/about@2x.webp 2x" type="image/webp">
                     <img class="about__picture" src="img/about.jpg" srcset="img/about@2x.jpg" alt="Небоскрёбы."
-                      loading="lazy">
+                      loading="lazy"
+                      width="768" height="1188">
                   </picture>
                 </div>
                 <div class="about__content">
@@ -146,8 +147,12 @@
                   <p>Элементы конструкций промышленных зданий и сооружений</p>
                   <div class="services__picture-wrapper">
                     <picture>
-                      <source srcset="img/services/service0.webp" type="image/webp">
-                      <img class="services__picture" src="img/service0.jpg" alt="" aria-hidden="true" loading="lazy">
+                      <source media="(min-width: 768px)" srcset="img/services/service0.webp 1x, img/services/service0@2x.webp 2x"
+                        type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/services/service0.jpg 1x, img/services/service0@2x.jpg 2x">
+                      <source srcset="img/services/service0-mobile.webp" type="image/webp">
+                      <img class="services__picture" src="img/services/service0-mobile.jpg"
+                        srcset="img/services/service0-mobile@2x.jpg 2x" alt="" aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
                 </li>
@@ -155,8 +160,12 @@
                   <p>Кабельная продукция</p>
                   <div class="services__picture-wrapper">
                     <picture>
-                      <source srcset="img/services/service1.webp" type="image/webp">
-                      <img class="services__picture" src="img/service1.jpg" alt="" aria-hidden="true" loading="lazy">
+                      <source media="(min-width: 768px)" srcset="img/services/service1.webp 1x, img/services/service1@2x.webp 2x"
+                        type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/services/service1.jpg 1x, img/services/service1@2x.jpg 2x">
+                      <source srcset="img/services/service1-mobile.webp" type="image/webp">
+                      <img class="services__picture" src="img/services/service1-mobile.jpg"
+                        srcset="img/services/service1-mobile@2x.jpg 2x" alt="" aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
                 </li>
@@ -168,8 +177,12 @@
                   </p>
                   <div class="services__picture-wrapper">
                     <picture>
-                      <source srcset="img/services/service2.webp" type="image/webp">
-                      <img class="services__picture" src="img/service2.jpg" alt="" aria-hidden="true" loading="lazy">
+                      <source media="(min-width: 768px)" srcset="img/services/service2.webp 1x, img/services/service2@2x.webp 2x"
+                        type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/services/service2.jpg 1x, img/services/service2@2x.jpg 2x">
+                      <source srcset="img/services/service2-mobile.webp" type="image/webp">
+                      <img class="services__picture" src="img/services/service2-mobile.jpg"
+                        srcset="img/services/service2-mobile@2x.jpg 2x" alt="" aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
                 </li>
@@ -177,8 +190,12 @@
                   <p>Спецтехника</p>
                   <div class="services__picture-wrapper">
                     <picture>
-                      <source srcset="img/services/service6.webp" type="image/webp">
-                      <img class="services__picture" src="img/service3.jpg" alt="" aria-hidden="true" loading="lazy">
+                      <source media="(min-width: 768px)" srcset="img/services/service3.webp 1x, img/services/service3@2x.webp 2x"
+                        type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/services/service3.jpg 1x, img/services/service3@2x.jpg 2x">
+                      <source srcset="img/services/service3-mobile.webp" type="image/webp">
+                      <img class="services__picture" src="img/services/service3-mobile.jpg"
+                        srcset="img/services/service3-mobile@2x.jpg 2x" alt="" aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
                 </li>
@@ -186,8 +203,12 @@
                   <p>КИП и лабораторное измерительное оборудование</p>
                   <div class="services__picture-wrapper">
                     <picture>
-                      <source srcset="img/services/service4.webp" type="image/webp">
-                      <img class="services__picture" src="img/service4.jpg" alt="" aria-hidden="true" loading="lazy">
+                      <source media="(min-width: 768px)" srcset="img/services/service4.webp 1x, img/services/service4@2x.webp 2x"
+                        type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/services/service4.jpg 1x, img/services/service4@2x.jpg 2x">
+                      <source srcset="img/services/service4-mobile.webp" type="image/webp">
+                      <img class="services__picture" src="img/services/service4-mobile.jpg"
+                        srcset="img/services/service4-mobile@2x.jpg 2x" alt="" aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
                 </li>
@@ -195,8 +216,12 @@
                   <p>Блочное оборудование теплоснабжения</p>
                   <div class="services__picture-wrapper">
                     <picture>
-                      <source srcset="img/services/service5.webp" type="image/webp">
-                      <img class="services__picture" src="img/service5.jpg" alt="" aria-hidden="true" loading="lazy">
+                      <source media="(min-width: 768px)" srcset="img/services/service5.webp 1x, img/services/service5@2x.webp 2x"
+                        type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/services/service5.jpg 1x, img/services/service5@2x.jpg 2x">
+                      <source srcset="img/services/service5-mobile.webp" type="image/webp">
+                      <img class="services__picture" src="img/services/service5-mobile.jpg"
+                        srcset="img/services/service5-mobile@2x.jpg 2x" alt="" aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
                 </li>
@@ -204,8 +229,12 @@
                   <p>Станции подготовки и очистки сточных вод</p>
                   <div class="services__picture-wrapper">
                     <picture>
-                      <source srcset="img/services/service6.webp" type="image/webp">
-                      <img class="services__picture" src="img/service6.jpg" alt="" aria-hidden="true" loading="lazy">
+                      <source media="(min-width: 768px)" srcset="img/services/service6.webp 1x, img/services/service6@2x.webp 2x"
+                        type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/services/service6.jpg 1x, img/services/service6@2x.jpg 2x">
+                      <source srcset="img/services/service6-mobile.webp" type="image/webp">
+                      <img class="services__picture" src="img/services/service6-mobile.jpg"
+                        srcset="img/services/service6-mobile@2x.jpg 2x" alt="" aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
                 </li>
