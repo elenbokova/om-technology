@@ -162,9 +162,9 @@
                 </li>
                 <li class="services__item">
                   <p>Изделия геотехнического мониторинга
-                  <small>
-                    Скважины термометрические, реперы глубинные, скважины гидрогеологические
-                  </small>
+                    <small>
+                      Скважины термометрические, реперы глубинные, скважины гидрогеологические
+                    </small>
                   </p>
                   <div class="services__picture-wrapper">
                     <picture>
@@ -178,7 +178,7 @@
                   <div class="services__picture-wrapper">
                     <picture>
                       <source srcset="img/services/service6.webp" type="image/webp">
-                      <img class="services__picture" src="img/service6.jpg" alt="" aria-hidden="true" loading="lazy">
+                      <img class="services__picture" src="img/service3.jpg" alt="" aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
                 </li>
@@ -652,45 +652,6 @@
       <use xlink:href="img/sprite.svg#arrow-up"></use>
     </svg>
   </button>
-
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <h2 class="modal__title">Закажите звонок</h2>
-        <p class="modal__description">Оставьте контакты, мы&nbsp;постараемся перезвонить как можно скорее</p>
-
-        <button class="button modal__close-button" type="button" aria-label="Закрыть окно" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-
-        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
-          <label>
-            <span class="visually-hidden">Имя</span>
-            <input class="modal__input" type="text" inputmode="text" id="modal-name" name="modal-name" placeholder="Имя"
-              data-focus required autofocus>
-          </label>
-          <label>
-            <span class="visually-hidden">Телефон</span>
-            <input class="modal__input" type="tel" inputmode="tel" data-phone-input id="modal-phone" name="modal-phone"
-              placeholder="Телефон" minlength="15" maxlength="18" required>
-          </label>
-          <label>
-            <span class="visually-hidden">Комментарий</span>
-            <textarea class="modal__input modal__input--text" id="modal-comment" name="modal-comment"
-              placeholder="Комментарий"></textarea>
-          </label>
-          <input class="visually-hidden modal__checkbox-input" type="checkbox" id="modal-permission" name="permission"
-            checked required>
-          <label class="modal__checkbox-label" for="modal-permission">Я согласен на&nbsp;обработку персональных
-            данных</label>
-          <button class="button button--accent modal__button" type="submit">Отправить</button>
-        </form>
-      </div>
-    </div>
-  </div>
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
