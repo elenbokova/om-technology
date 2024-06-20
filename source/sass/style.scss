@@ -40,6 +40,11 @@
 @import "blocks/footer";
 @import "blocks/button-up";
 
+// Animations
+// ---------------------------------
+
+@import "animations/scroll-animation";
+
 // ---------------------------------
 
 // ❗ обязательно используйте mixin hover-focus для отключения ховеров на тач устройствах

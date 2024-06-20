@@ -3,6 +3,7 @@ import {Burger} from './modules/burger';
 import {StickyHeader} from './modules/sticky-header';
 import {NavigationChanger} from './utils/navigation-changer';
 import {initUpButton} from './modules/scroll-to-top';
+import scrollAnimation from './modules/scroll-animation';
 
 
 // ---------------------------------
@@ -28,6 +29,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const navigationChanger = new NavigationChanger();
     navigationChanger.init();
+
+    scrollAnimation();
 
     initUpButton();
   });

@@ -1,0 +1,27 @@
+.anim-bottom-hidden {
+  opacity: 0;
+  transform: translateY(15vh);
+  transition: opacity 0.6s ease, transform 0.7s ease;
+}
+
+.anim-right-hidden {
+  opacity: 0;
+  transform: translateX(10vw);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.anim-left-hidden {
+  opacity: 0;
+  transform: translateX(-10vw);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.anim-hidden {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.anim-visible {
+  opacity: 1;
+  transform: translate(0);
+}
