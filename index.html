@@ -33,10 +33,11 @@
       <div class="container">
         <div class="header__container header__container--nojs">
           <a class="header__logo" href="#">
-            <img class="header__logo-image" src="img/logo-full.png" alt="Логотип компании «ОМ-Технология»." width="180" height="61">
+            <img class="header__logo-image" src="img/logo-full.png" alt="Логотип компании ООО «ОМ-Технология»."
+              >
           </a>
           <nav class="header__nav">
-            <ul class="header__nav-list list-reset">
+            <ul class="header__nav-list list-reset anim-hidden" data-anim="">
               <li class="header__nav-list-item">
                 <a class="header__nav-list-link" href="#about" data-navigation-link="">О&nbsp;компании</a>
               </li>
@@ -76,13 +77,13 @@
                 <source media="(min-width: 768px)" srcset="img/intro.webp 1x, img/intro@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 768px)" srcset="img/intro.jpg 1x, img/intro@2x.jpg 2x">
                 <source srcset="img/intro-mobile.webp 1x, img/intro-mobile@2x.webp 2x" type="image/webp">
-                <img src="img/intro-mobile.jpg" srcset="img/intro-mobile@2x.jpg 2x" alt="Футуристичные схемы">
+                <img src="img/intro-mobile.jpg" srcset="img/intro-mobile@2x.jpg 2x" alt="" aria-hidden="true">
               </picture>
             </div>
 
             <div class="container">
-              <h1 class="visually-hidden">Компания Ом-Технология</h1>
-              <img class="intro__logo" src="./img/logo-full.png" alt="Logo" width="645" height="220">
+              <h1 class="visually-hidden">Компания ООО «ОМ-Технология»</h1>
+              <img class="intro__logo anim-hidden" src="./img/logo-full.png" alt="Logo" width="645" height="220" data-anim="">
             </div>
           </section>
 
@@ -96,39 +97,38 @@
                   <picture>
                     <source srcset="img/about.webp 1x, img/about@2x.webp 2x" type="image/webp">
                     <img class="about__picture" src="img/about.jpg" srcset="img/about@2x.jpg" alt="Небоскрёбы."
-                      loading="lazy"
-                      width="768" height="1188">
+                      loading="lazy" width="768" height="1188">
                   </picture>
                 </div>
                 <div class="about__content">
                   <h2 class="about__title">
                     О компании
                   </h2>
-                  <p class="about__text">
+                  <p class="about__text anim-hidden" data-anim="right">
                     <b>ООО «Ом-Технология»</b> – предприятие, основанное в 2014 году (<b>до мая 2024
                       – ООО «ЗПГО»</b>). Деятельность компании базируется на производстве и комплексных поставках
                     различного рода продукции и оборудования для промышленных объектов топливно-энергетического сектора
                   </p>
-                  <p class="about__text">
+                  <p class="about__text anim-hidden" data-anim="right">
                     Производственное направление было сосредоточено на изготовлении промышленных металлоконструкций
                     любой сложности, элементов зданий и сооружений, а также изделий
                     геотехнического мониторинга. Данная продукция и в настоящее время проектируется на объекты ПАО
                     «Газпром» по ТУ 25.99.99 – 011 – 26824023 – 2020.
                   </p>
-                  <p class="about__text">
+                  <p class="about__text anim-hidden" data-anim="right">
                     <b>С 2022 года</b> – поставщик электронной компонентной базы (<b>ЭКБ</b>).
-                  <ul class="about__list">
+                  <ul class="about__list anim-hidden" data-anim="right">
                     <li>дистрибуция широкого ассортимента ЭКБ продукции</li>
                     <li>квалифицированный поставщик ЭКБ и оборудования для ответственных
                       применений</li>
                     <li>импортер широкой номенклатуры ЭКБ иностранного производства</li>
                   </ul>
-                  <p class="about__text">
+                  <p class="about__text anim-hidden" data-anim="right">
                     <b>
                       СИСТЕМА ДОБРОВОЛЬНОЙ СЕРТИФИКАЦИИ <br />«ОБОРОННЫЙ РЕГИСТР»
-                      № РОСС RU.В063.04ОР00<br />
+                      №&nbsp;РОСС&nbsp;RU.В063.04ОР00<br />
                       СЕРТИФИКАТ СООТВЕТСТВИЯ
-                      № RU.В063.ОРС.04.С1118-2024<br />
+                      №&nbsp;RU.В063.ОРС.04.С1118-2024<br />
                     </b>
                     Срок действия с 03.06.2024 по 03.06.2027.
                   </p>
@@ -143,33 +143,31 @@
             <div class="container">
               <h2 class="services__title">Ключевая продукция</h2>
               <ul class="services__list list-reset">
-                <li class="services__item">
+                <li class="services__item anim-bottom-hidden" data-anim="bottom">
                   <p>Элементы конструкций промышленных зданий и сооружений</p>
                   <div class="services__picture-wrapper">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/services/service0.webp 1x, img/services/service0@2x.webp 2x"
-                        type="image/webp">
-                      <source media="(min-width: 768px)" srcset="img/services/service0.jpg 1x, img/services/service0@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/services/service0.webp" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/services/service0.jpg">
                       <source srcset="img/services/service0-mobile.webp" type="image/webp">
                       <img class="services__picture" src="img/services/service0-mobile.jpg"
                         srcset="img/services/service0-mobile@2x.jpg 2x" alt="" aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
                 </li>
-                <li class="services__item">
+                <li class="services__item anim-bottom-hidden" data-anim="bottom">
                   <p>Кабельная продукция</p>
                   <div class="services__picture-wrapper">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/services/service1.webp 1x, img/services/service1@2x.webp 2x"
-                        type="image/webp">
-                      <source media="(min-width: 768px)" srcset="img/services/service1.jpg 1x, img/services/service1@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/services/service1.webp" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/services/service1.jpg 1x">
                       <source srcset="img/services/service1-mobile.webp" type="image/webp">
                       <img class="services__picture" src="img/services/service1-mobile.jpg"
                         srcset="img/services/service1-mobile@2x.jpg 2x" alt="" aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
                 </li>
-                <li class="services__item">
+                <li class="services__item anim-bottom-hidden" data-anim="bottom">
                   <p>Изделия геотехнического мониторинга
                     <small>
                       Скважины термометрические, реперы глубинные, скважины гидрогеологические
@@ -177,61 +175,56 @@
                   </p>
                   <div class="services__picture-wrapper">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/services/service2.webp 1x, img/services/service2@2x.webp 2x"
-                        type="image/webp">
-                      <source media="(min-width: 768px)" srcset="img/services/service2.jpg 1x, img/services/service2@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/services/service2.webp" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/services/service2.jpg">
                       <source srcset="img/services/service2-mobile.webp" type="image/webp">
                       <img class="services__picture" src="img/services/service2-mobile.jpg"
                         srcset="img/services/service2-mobile@2x.jpg 2x" alt="" aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
                 </li>
-                <li class="services__item">
+                <li class="services__item anim-bottom-hidden" data-anim="bottom">
                   <p>Спецтехника</p>
                   <div class="services__picture-wrapper">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/services/service3.webp 1x, img/services/service3@2x.webp 2x"
-                        type="image/webp">
-                      <source media="(min-width: 768px)" srcset="img/services/service3.jpg 1x, img/services/service3@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/services/service3.webp" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/services/service3.jpg">
                       <source srcset="img/services/service3-mobile.webp" type="image/webp">
                       <img class="services__picture" src="img/services/service3-mobile.jpg"
                         srcset="img/services/service3-mobile@2x.jpg 2x" alt="" aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
                 </li>
-                <li class="services__item">
+                <li class="services__item anim-bottom-hidden" data-anim="bottom">
                   <p>КИП и лабораторное измерительное оборудование</p>
                   <div class="services__picture-wrapper">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/services/service4.webp 1x, img/services/service4@2x.webp 2x"
-                        type="image/webp">
-                      <source media="(min-width: 768px)" srcset="img/services/service4.jpg 1x, img/services/service4@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/services/service4.webp" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/services/service4.jpg">
                       <source srcset="img/services/service4-mobile.webp" type="image/webp">
                       <img class="services__picture" src="img/services/service4-mobile.jpg"
                         srcset="img/services/service4-mobile@2x.jpg 2x" alt="" aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
                 </li>
-                <li class="services__item">
+                <li class="services__item anim-bottom-hidden" data-anim="bottom">
                   <p>Блочное оборудование теплоснабжения</p>
                   <div class="services__picture-wrapper">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/services/service5.webp 1x, img/services/service5@2x.webp 2x"
-                        type="image/webp">
-                      <source media="(min-width: 768px)" srcset="img/services/service5.jpg 1x, img/services/service5@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/services/service5.webp" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/services/service5.jpg ">
                       <source srcset="img/services/service5-mobile.webp" type="image/webp">
                       <img class="services__picture" src="img/services/service5-mobile.jpg"
                         srcset="img/services/service5-mobile@2x.jpg 2x" alt="" aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
                 </li>
-                <li class="services__item">
+                <li class="services__item anim-bottom-hidden" data-anim="bottom">
                   <p>Станции подготовки и очистки сточных вод</p>
                   <div class="services__picture-wrapper">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/services/service6.webp 1x, img/services/service6@2x.webp 2x"
-                        type="image/webp">
-                      <source media="(min-width: 768px)" srcset="img/services/service6.jpg 1x, img/services/service6@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/services/service6.webp" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/services/service6.jpg">
                       <source srcset="img/services/service6-mobile.webp" type="image/webp">
                       <img class="services__picture" src="img/services/service6-mobile.jpg"
                         srcset="img/services/service6-mobile@2x.jpg 2x" alt="" aria-hidden="true" loading="lazy">
@@ -244,8 +237,8 @@
             <section class="trunking" id="trunking">
               <div class="container">
                 <div class="trunking__content">
-                  <h3 class="trunking__title">Транкинговая радиосвязь</h3>
-                  <p class="trunking__text">
+                  <h3 class="trunking__title anim-right-hidden" data-anim="right">Транкинговая радиосвязь</h3>
+                  <p class="trunking__text anim-right-hidden" data-anim="right">
                     Отдельным направлением деятельности компании является поставка
                     <b>оборудования транкинговой радиосвязи стандартов DMR и Тetra</b>
                   </p>
@@ -257,37 +250,37 @@
               <div class="container">
                 <h3 class="ecb__title">ЭКБ</h3>
                 <div class="ecb__images">
-                  <div class="ecb-item">
+                  <div class="ecb-item anim-bottom-hidden" data-anim="bottom">
                     <picture>
                       <source srcset="img/ecb0.webp" type="image/webp">
                       <img class="ecb__picture" src="img/ecb0.jpg" alt="ЭКБ." aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
-                  <div class="ecb-item">
+                  <div class="ecb-item anim-bottom-hidden" data-anim="bottom">
                     <picture>
                       <source srcset="img/ecb1.webp" type="image/webp">
                       <img class="ecb__picture" src="img/ecb1.jpg" alt="ЭКБ." aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
-                  <div class="ecb-item">
+                  <div class="ecb-item anim-bottom-hidden" data-anim="bottom">
                     <picture>
                       <source srcset="img/ecb2.webp" type="image/webp">
                       <img class="ecb__picture" src="img/ecb2.jpg" alt="ЭКБ." aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
-                  <div class="ecb-item">
+                  <div class="ecb-item anim-bottom-hidden" data-anim="bottom">
                     <picture>
                       <source srcset="img/ecb3.webp" type="image/webp">
                       <img class="ecb__picture" src="img/ecb3.jpg" alt="ЭКБ." aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
-                  <div class="ecb-item">
+                  <div class="ecb-item anim-bottom-hidden" data-anim="bottom">
                     <picture>
                       <source srcset="img/ecb4.webp" type="image/webp">
                       <img class="ecb__picture" src="img/ecb4.jpg" alt="ЭКБ." aria-hidden="true" loading="lazy">
                     </picture>
                   </div>
-                  <div class="ecb-item">
+                  <div class="ecb-item anim-bottom-hidden" data-anim="bottom">
                     <picture>
                       <source srcset="img/ecb5.webp" type="image/webp">
                       <img class="ecb__picture" src="img/ecb5.jpg" alt="ЭКБ." aria-hidden="true" loading="lazy">
@@ -301,12 +294,13 @@
 
             <section class="catalog" id="catalog">
               <div class="container">
-                <h3 class="catalog__title">В Ом-Технология – большой, постоянно обновляемый каталог, который включает в
-                  себя более 3000
-                  наименований товаров.</h3>
-                <p class="catalog__text">Индивидуальный подход, быстрый поиск товаров по вашей заявке и различные виды
-                  доставки.</p>
-                <ul class="catalog__list list-reset list-custom-marker">
+                <h3 class="catalog__title">В ООО «ОМ-Технология» – большой, постоянно обновляемый каталог, который
+                  включает в себя более 3000 наименований товаров.
+                </h3>
+                <p class="catalog__text anim-hidden" data-anim="">
+                  Индивидуальный подход, быстрый поиск товаров по вашей заявке и различные виды доставки.
+                </p>
+                <ul class="catalog__list list-reset list-custom-marker anim-hidden" data-anim="">
                   <li class="catalog__item">Дискретные полупроводниковые приборы</li>
                   <li class="catalog__item">Интегральные микросхемы</li>
                   <li class="catalog__item">Микропроцессоры</li>
@@ -341,7 +335,7 @@
                   </div>
                   <div class="complex__content">
                     <h3 class="complex__title">Комлексные поставки продукции для&nbsp;промышленных объектов</h3>
-                    <ul class="complex__list list-custom-marker">
+                    <ul class="complex__list list-custom-marker anim-hidden" data-anim="">
                       <li class="complex__item">Оборудование вентиляции и кондиционирования</li>
                       <li class="complex__item">Дизельные и газомоторные электростанции</li>
                       <li class="complex__item">Насосные станции</li>
@@ -368,8 +362,8 @@
               <div class="advantages__wrapper">
                 <div class="advantages__content">
                   <h2 class="advantages__title">Наши преимущества</h2>
-                  <p class="advantages__subtitle">ООО «Ом-Технология»:</p>
-                  <ul class="advantages__list list-reset list-custom-marker">
+                  <p class="advantages__subtitle anim-hidden" data-anim="">ООО «Ом-Технология»:</p>
+                  <ul class="advantages__list list-reset list-custom-marker anim-hidden" data-anim="">
                     <li class="advantages__item">Гарантия качества</li>
                     <li class="advantages__item">Осуществление входного контроля</li>
                     <li class="advantages__item">Надлежащая упаковка товара</li>
@@ -379,9 +373,8 @@
                     <li class="advantages__item">Квалифицированный персонал</li>
                   </ul>
 
-                  <strong class="advantages__strong">На всех этапах поставки продукции применяется сертифицированная
-                    система менеджмента
-                    качества</strong>
+                  <strong class="advantages__strong anim-hidden" data-anim="">На всех этапах поставки продукции применяется сертифицированная
+                    система менеджмента качества</strong>
                 </div>
 
                 <div class="advantages__picture-wrapper">
@@ -400,7 +393,7 @@
           <section class="partners" id="partners">
             <div class="container">
               <h2 class="partners__title">Наши партнеры:</h2>
-              <ul class="partners__list list-reset">
+              <ul class="partners__list list-reset anim-hidden" data-anim="">
                 <li class="partners__item">
                   <picture>
                     <source srcset="img/partners/part0.webp" type="image/webp">
@@ -438,7 +431,7 @@
                 </li>
               </ul>
               <h2 class="partners__title">Бренд продукты:</h2>
-              <ul class="partners__list list-reset">
+              <ul class="partners__list list-reset anim-hidden" data-anim="">
                 <li class="partners__item">
                   <picture>
                     <source srcset="img/partners/brand0.webp" type="image/webp">
@@ -567,7 +560,7 @@
                 </li>
               </ul>
               <h2 class="partners__title">Поставщики:</h2>
-              <ul class="partners__list list-reset">
+              <ul class="partners__list list-reset anim-hidden" data-anim>
                 <li class="partners__item">
                   <picture>
                     <source srcset="img/partners/vendor0.webp" type="image/webp">
