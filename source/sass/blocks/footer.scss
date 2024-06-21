@@ -46,5 +46,10 @@
     color: $color-basic-white;
     font-family: $ff-custom;
     text-transform: uppercase;
+    transition: opacity $trans-default;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
   }
 }

@@ -48,7 +48,7 @@
 // ---------------------------------
 
 // ❗ обязательно используйте mixin hover-focus для отключения ховеров на тач устройствах
-/* @mixin hover-focus {
+ @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         @content;
@@ -59,7 +59,7 @@
       @content;
     }
   }
-*/
+
 /*  @include hover-focus {
       opacity: 0.8;
     }

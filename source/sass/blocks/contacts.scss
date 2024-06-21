@@ -67,6 +67,12 @@
     font-size: larger;
     font-weight: 500;
 
+    transition: opacity $trans-default;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+
     @include vp-1279 {
       margin-right: -10px;
     }

@@ -12,6 +12,7 @@
     height: 100%;
     background: $color-transparent-accent;
     clip-path: polygon(0 100%, 0 45%, 92% 100%);
+    z-index: -1;
   }
 
   @include vp-767 {
