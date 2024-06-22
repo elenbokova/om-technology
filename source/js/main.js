@@ -9,6 +9,7 @@ import scrollAnimation from './modules/scroll-animation';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.remove('no-js');
 
   // Utils
   // ---------------------------------

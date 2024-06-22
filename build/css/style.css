@@ -2798,6 +2798,16 @@ button {
   transform: translate(0);
 }
 
+no-js .anim-bottom-hidden,
+no-js .anim-right-hidden,
+no-js .anim-left-hidden,
+no-js .anim-hidden {
+  opacity: 1;
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+}
+
 /*  @include hover-focus {
       opacity: 0.8;
     }
