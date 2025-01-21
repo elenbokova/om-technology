@@ -9,14 +9,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 25%;
-  //filter: drop-shadow(0 4px 4px rgba(255, 172, 95, 0.863));
 
   @include vp-767 {
     background-size: auto;
     background-position-y: 39%;
     padding-top: 50vh;
   }
-
 
   &::before {
     content: "";

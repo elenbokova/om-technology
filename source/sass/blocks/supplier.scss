@@ -1,0 +1,139 @@
+.supplier {
+  padding: 200px 0 160px;
+  position: relative;
+
+  @include vp-1539 {
+    padding: 180px 0 100px;
+  }
+
+  @include vp-1023 {
+    padding: 140px 0 70px;
+  }
+
+  @include vp-767 {
+    padding: 9vw 0 7vw;
+  }
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: $accent-to-right;
+    clip-path: polygon(100% 0, 10% 0, 100% 25%);
+    z-index: -1;
+
+    @include vp-767 {
+      clip-path: polygon(0 0, 100% 12%, 100% 0);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: $color-transparent-dark;
+    clip-path: polygon(95% 0,100% 85%,100% 0);
+    z-index: 1;
+
+    @include vp-767 {
+      clip-path: polygon(95% 0,100% 65%,100% 0);
+    }
+
+    @include vp-374 {
+      display: none;
+    }
+  }
+
+  .container {
+    padding: 0 200px 0 120px;
+
+    @include vp-1023 {
+      padding: 0 120px 0 80px;
+    }
+
+    @include vp-767 {
+      padding: 0 30px;
+    }
+  }
+
+  .supplier__info {
+    position: relative;
+    padding-left: 40px;
+
+    @include vp-567 {
+      padding-left: 25px;
+    }
+
+    @include vp-374 {
+      padding-left: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: $color-transparent-accent;
+
+      @include vp-374 {
+        left: -10px;
+      }
+    }
+  }
+
+
+}
+
+.supplier__title {
+  margin-bottom: 40px;
+  width: 70%;
+  font-family: $ff-main;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1em;
+
+  @include vp-1439 {
+    margin-bottom: 2vw;
+    font-size: 2rem;
+    width: 80%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 4vh;
+  }
+
+  @include vp-374 {
+    font-size: 24px;
+  }
+}
+
+.supplier__text {
+  font-size: 24px;
+  color: $color-basic-gray;
+  margin-bottom: 20px;
+  line-height: 1.2;
+
+  @include vp-1439 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  @include vp-767 {
+    margin-bottom: 2vh;
+    font-size: 1.4rem;
+  }
+
+  @include vp-374 {
+    font-size: 18px;
+  }
+}
