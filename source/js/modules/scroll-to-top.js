@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 const upButton = document.querySelector('#button-up');
 
 const show = (button) => {

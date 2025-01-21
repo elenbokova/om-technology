@@ -28,6 +28,8 @@ $color-transparent:                 rgba(2, 1, 1, 0);
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.898) 0%, rgba(0, 0, 0, 0.24) 85%);
 $gray-to-bottom:                    linear-gradient(to bottom, hsla(200, 100%, 98%, 0.92) 85%, rgba(247, 252, 255, 0.726) 100%);
 $accent-to-bottom:                  linear-gradient(to bottom, rgba(236, 200, 52, 0.527) 85%, rgba(172, 138, 0, 0.7) 100%);
+$accent-to-right:                   linear-gradient(to right, rgba(236, 200, 52, 0.527) 35%, rgba(172, 138, 0, 0.7) 100%);
+
 
 // Typography
 // ---------------------------------
